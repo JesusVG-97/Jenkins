@@ -1,0 +1,23 @@
+pipeline {
+    agent any
+
+    stages {
+        stage('Construir imagen Docker') {
+            steps {
+                sh 'docker build -t calculadora-app .'
+            }
+        }
+
+        stage('Ejecutar contenedor') {
+            steps {
+                sh 'docker run --rm --name test-container calculadora-app'
+            }
+        }
+
+        stage('Levantar entorno con Docker Compose') {
+            steps {
+                sh 'docker-compose up --abort-on-container-exit --build'
+            }
+        }
+    }
+}

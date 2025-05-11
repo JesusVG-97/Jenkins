@@ -1,7 +1,7 @@
 
 # 📦 RA5.1 - Jenkins + CI/CD + Docker
 
-Este repositorio contiene el desarrollo completo de la práctica **RA5.1** de la asignatura *Ciberseguridad en entornos de las tecnologías de la información*, centrada en la **implantación segura de pipelines CI/CD usando Jenkins y Docker**.
+Este repositorio contiene el desarrollo completo de la práctica **RA5.1** de la asignatura *Posada en Producció Segura*, centrada en la **implantación segura de pipelines CI/CD usando Jenkins y Docker**.
 
 ---
 

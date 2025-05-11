@@ -1,0 +1,17 @@
+pipeline {
+    agent any
+        stage('Instalar dependencias') {
+            steps {
+                sh 'pip install pytest'
+            }
+        }
+
+        stage('Ejecutar tests') {
+            steps {
+                dir('python') {
+                    sh 'pytest'
+                }
+            }
+        }
+    }
+}
